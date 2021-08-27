@@ -1358,8 +1358,6 @@ FROM SC
 WHERE Cno= '2';
 ```
 
-![在这里插入图片描述](picture/20200328170259.png)
-
 **[例30]查询学生201215121选修课程的总学分数。**
 
 ```sql
@@ -1558,7 +1556,6 @@ FROM  SC RIGHT OUTER JOIN Course ON (SC.Cno=Course.Cno);
 ##### ④ FULL JOIN (FULL OUTER JOIN)
 
 - `FULL JOIN`：关键字只要左表（table1）和右表（table2）其中一个表中存在匹配，则返回行。结合了 LEFT JOIN 和 RIGHT JOIN 的结果。
-  ![在这里插入图片描述](picture/20200328187180.png)
 
 ```sql
 SELECT Sno,SC.Cno,Grade,Course.Cno,Cname,Cpno,Ccredit
